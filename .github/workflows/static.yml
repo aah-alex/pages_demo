@@ -41,4 +41,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: . # The folder the action should deploy.
-          target-folder: "{{ github.ref }}"
+          target-folder: ${{ github.ref }}
